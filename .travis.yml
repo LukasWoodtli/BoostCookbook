@@ -8,7 +8,7 @@ install:
 - echo ${CXX}
 - ${CXX} --version
 - ${CXX} -v
-- if  [ "$TRAVIS_OS_NAME" = "osx" ]; then brew install cmake && brew install boost; fi
+- if  [ "$TRAVIS_OS_NAME" = "osx" ]; then brew install boost; fi
 
 addons:
   apt:
