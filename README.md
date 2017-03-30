@@ -1,8 +1,8 @@
 Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub.com/mapt/book/All%20Books/9781849514880)
 
 # Build
-<!--[![Build Status](https://travis-ci.org/LukasWoodtli/ModernCppDesign.svg?branch=master)](https://travis-ci.org/LukasWoodtli/ModernCppDesign)
--->
+
+[![Build Status](https://travis-ci.org/LukasWoodtli/BoostCookbook.svg?branch=master)](https://travis-ci.org/LukasWoodtli/BoostCookbook)
 
 # Contents
 
