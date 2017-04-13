@@ -17,5 +17,5 @@ include_directories(${Boost_INCLUDE_DIRS})
 
 enable_testing()
 
-add_executable(main main.c)
+add_subdirectory("01_Application")
 
