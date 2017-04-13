@@ -27,11 +27,20 @@ addons:
     - libboost1.55-all-dev
 
 language: cpp
+
 compiler:
 - clang
 - gcc
 os:
 - linux
 - osx
+
+# would require a rebuild (ABI not compatible)
+matrix:
+  exclude:
+  - os: osx
+    compiler: gcc
+
+
 script: bash ./.travis_build_and_test.sh
 
