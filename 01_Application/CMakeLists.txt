@@ -7,3 +7,5 @@ target_link_libraries(ProgramOptions boost_program_options)
 add_executable(BoostAny BoostAny.cpp)
 add_test(BoostAny BoostAny)
 
+add_executable(BoostVariant BoostVariant.cpp)
+add_test(BoostVariant BoostVariant)
