@@ -19,3 +19,6 @@ enable_testing()
 
 add_subdirectory("01_Application")
 
+add_subdirectory("Other")
+
+
