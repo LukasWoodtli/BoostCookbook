@@ -15,7 +15,7 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 | Getting configuration options                                                | 8    |   ✓  |
 | Storing any value in a container/variable                                    | 13   |   ✓  |
 | Storing multiple chosen types in a variable/container                        | 16   |   ✓  |
-| Using a safer way to work with a container that stores multiple chosen types | 18   |      |
+| Using a safer way to work with a container that stores multiple chosen types | 18   |   ✓  |
 | Returning a value or flag where there is no value                            | 22   |      |
 | Returning an array from a function                                           | 25   |      |
 | Combining multiple values into one                                           | 28   |      |

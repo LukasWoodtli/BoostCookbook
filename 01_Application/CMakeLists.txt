@@ -9,3 +9,7 @@ add_test(BoostAny BoostAny)
 
 add_executable(BoostVariant BoostVariant.cpp)
 add_test(BoostVariant BoostVariant)
+
+add_executable(StaticVisitor StaticVisitor.cpp)
+add_test(StaticVisitor StaticVisitor)
+
