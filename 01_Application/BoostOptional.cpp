@@ -20,7 +20,7 @@ public:
   static boost::optional<locked_device> try_lock_device() {
     if (rand() % 2) {
       // Failed to lock device
-      return boost::none;
+      return boost::none; // or: return boost::optional<locked_device>();
     }
 
     // Success!
