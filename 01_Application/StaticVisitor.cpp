@@ -17,7 +17,7 @@ any_db_row_t any_get_row(const char* query) {
 	any_db_row_t row;
 	row.push_back(10);
 	row.push_back(10.1f);
-	row.push_back(10.2d);
+	row.push_back(10.2); // double
 	row.push_back("hello again");
 	return row;
 }
@@ -27,7 +27,7 @@ struct db_sum : std::unary_function<boost::any, void> {
 
 private:
 	double& sum_;
-	
+
 public:
 	explicit db_sum(double& sum) :
 		sum_(sum)
@@ -59,7 +59,7 @@ db_row_t get_row(const char* query) {
 	db_row_t row;
 	row.push_back(10);
 	row.push_back(10.1f);
-	row.push_back(10.2d);
+	row.push_back(10.2); // double
 	row.push_back("hello again");
 	return row;
 }
