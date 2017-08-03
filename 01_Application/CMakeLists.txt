@@ -13,3 +13,6 @@ add_test(BoostVariant BoostVariant)
 add_executable(StaticVisitor StaticVisitor.cpp)
 add_test(StaticVisitor StaticVisitor)
 
+add_executable(BoostOptional BoostOptional.cpp)
+add_test(BoostOptional BoostOptional)
+
