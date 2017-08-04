@@ -16,3 +16,5 @@ add_test(StaticVisitor StaticVisitor)
 add_executable(BoostOptional BoostOptional.cpp)
 add_test(BoostOptional BoostOptional)
 
+add_executable(BoostArray BoostArray.cpp)
+add_test(BoostArray BoostArray)
