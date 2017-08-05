@@ -18,7 +18,7 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 | Using a safer way to work with a container that stores multiple chosen types | 18   |   ✓  |
 | Returning a value or flag where there is no value                            | 22   |   ✓  |
 | Returning an array from a function                                           | 25   |   ✓  |
-| Combining multiple values into one                                           | 28   |      |
+| Combining multiple values into one                                           | 28   |   ✓  |
 | Reordering the parameters of function                                        | 30   |      |
 | Binding a value as a function parameter                                      | 34   |      |
 | Using the C++11 move emulation                                               | 37   |      |

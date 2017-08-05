@@ -18,3 +18,6 @@ add_test(BoostOptional BoostOptional)
 
 add_executable(BoostArray BoostArray.cpp)
 add_test(BoostArray BoostArray)
+
+add_executable(BoostTuple BoostTuple.cpp)
+add_test(BoostTuple BoostTuple)
