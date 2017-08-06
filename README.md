@@ -19,7 +19,7 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 | Returning a value or flag where there is no value                            | 22   |   ✓  |
 | Returning an array from a function                                           | 25   |   ✓  |
 | Combining multiple values into one                                           | 28   |   ✓  |
-| Reordering the parameters of function                                        | 30   |      |
+| Reordering the parameters of function                                        | 30   |   ✓  |
 | Binding a value as a function parameter                                      | 34   |      |
 | Using the C++11 move emulation                                               | 37   |      |
 | Making a noncopyable class                                                   | 40   |      |
