@@ -25,3 +25,5 @@ add_test(BoostTuple BoostTuple)
 add_executable(BoostBind BoostBind.cpp)
 add_test(BoostBind BoostBind)
 
+add_executable(BoostBind2 BoostBind2.cpp)
+add_test(BoostBind2 BoostBind2)
