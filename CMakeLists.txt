@@ -5,10 +5,10 @@ project(BoostCookbook)
 set(CMAKE_VERBOSE_MAKEFILE ON)
 set(CMAKE_COLOR_MAKEFILE   ON)
 
-set(CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} "-W -Wall -Wextra  -Werror -std=c++11")
-
 if(APPLE AND CMAKE_CXX_COMPILER_ID MATCHES Clang)
-set(CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} " -stdlib=libc++")
+set(CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} "-W -Wall -Wextra  -Werror -std=c++11 -stdlib=libc++")
+else()
+set(CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} "-W -Wall -Wextra  -Werror -std=c++11")
 endif()
 
 if(NOT CMAKE_BUILD_TYPE)
