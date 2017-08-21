@@ -1,5 +1,5 @@
 #include <iostream>
-#include <assert.h>
+#include <cassert>
 
 #include <boost/move/move.hpp>
 #include <boost/container/vector.hpp>
