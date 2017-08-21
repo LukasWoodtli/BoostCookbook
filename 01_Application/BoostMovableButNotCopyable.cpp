@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cassert>
 
 #include <boost/move/move.hpp>
 #include <boost/container/vector.hpp>
