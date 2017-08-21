@@ -1,5 +1,6 @@
 
 #include <string>
+#include <cassert>
 
 #include <boost/move/move.hpp>
 #include <boost/swap.hpp>
