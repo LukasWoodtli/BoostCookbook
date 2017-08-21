@@ -21,7 +21,7 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 | Combining multiple values into one                                           | 28   |   ✓  |
 | Reordering the parameters of function                                        | 30   |   ✓  |
 | Binding a value as a function parameter                                      | 34   |   ✓  |
-| Using the C++11 move emulation                                               | 37   |      |
+| Using the C++11 move emulation                                               | 37   |   ✓  |
 | Making a noncopyable class                                                   | 40   |      |
 | Making a noncopyable but movable class                                       | 42   |      |
 

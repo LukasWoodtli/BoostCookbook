@@ -27,3 +27,6 @@ add_test(BoostBind BoostBind)
 
 add_executable(BoostBind2 BoostBind2.cpp)
 add_test(BoostBind2 BoostBind2)
+
+add_executable(BoostMove BoostMove.cpp)
+add_test(BoostMove BoostMove)
