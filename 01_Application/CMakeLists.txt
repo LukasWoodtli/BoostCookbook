@@ -30,3 +30,7 @@ add_test(BoostBind2 BoostBind2)
 
 add_executable(BoostMove BoostMove.cpp)
 add_test(BoostMove BoostMove)
+
+add_executable(BoostMovableButNotCopyable BoostMovableButNotCopyable.cpp)
+add_test(BoostMovableButNotCopyable BoostMovableButNotCopyable) 
+
