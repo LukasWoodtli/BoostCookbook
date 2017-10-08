@@ -23,7 +23,6 @@ include_directories(${Boost_INCLUDE_DIRS})
 enable_testing()
 
 add_subdirectory("01_Application")
+add_subdirectory("02_ConvertingData")
 
 add_subdirectory("Other")
-
-
