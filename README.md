@@ -32,7 +32,7 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 |----------------------------------------------|------|------|
 | Introduction                                 | 47   |   ✓  |
 | Converting strings to numbers                | 48   |   ✓  |
-| Converting numbers to strings                | 51   |      |
+| Converting numbers to strings                | 51   |   ✓  |
 | Converting numbers to numbers                | 53   |      |
 | Converting userdefined types to/from strings | 56   |      |
 | Casting polymorphic objects                  | 59   |      |
