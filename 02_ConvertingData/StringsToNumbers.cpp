@@ -55,12 +55,13 @@ int main() {
     }
     assert(exceptionThrown);
 
+#if 0 // this only works if the locale is supported by the OS
     // locale
     std::locale::global(std::locale("de_CH"));
     // in Switzerland coma sign is used as decimal separator
     float f = boost::lexical_cast<float>("1,0");
     assert(f < 1.01 && f > 0.99);
-
+#endif
 
     // containers
     std::set<std::string> str_set;
