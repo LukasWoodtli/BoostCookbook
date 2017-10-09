@@ -5,3 +5,6 @@ add_test(StringsToNumbers StringsToNumbers)
 
 add_executable(NumbersToStrings NumbersToStrings.cpp)
 add_test(NumbersToStrings NumbersToStrings)
+
+add_executable(NumbersToNumbers NumbersToNumbers.cpp)
+add_test(NumbersToNumbers NumbersToNumbers)
