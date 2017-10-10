@@ -11,3 +11,6 @@ add_test(NumbersToNumbers NumbersToNumbers)
 
 add_executable(UserdefinedTypes UserdefinedTypes.cpp)
 add_test(UserdefinedTypes UserdefinedTypes)
+
+add_executable(PolymorphicTypes PolymorphicTypes.cpp)
+add_test(PolymorphicTypes PolymorphicTypes)
