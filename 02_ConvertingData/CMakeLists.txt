@@ -8,3 +8,6 @@ add_test(NumbersToStrings NumbersToStrings)
 
 add_executable(NumbersToNumbers NumbersToNumbers.cpp)
 add_test(NumbersToNumbers NumbersToNumbers)
+
+add_executable(UserdefinedTypes UserdefinedTypes.cpp)
+add_test(UserdefinedTypes UserdefinedTypes)
