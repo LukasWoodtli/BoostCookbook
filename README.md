@@ -37,7 +37,7 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 | Converting userdefined types to/from strings | 56   |   ✓  |
 | Casting polymorphic objects                  | 59   |   ✓  |
 | Parsing simple input                         | 61   |   ✓  |
-| Parsing input                                | 66   |      |
+| Parsing input                                | 66   |   ✓  |
 
 
 ## Chapter 3: Managing Resources (p. 71)

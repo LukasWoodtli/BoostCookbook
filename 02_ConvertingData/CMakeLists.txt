@@ -17,3 +17,6 @@ add_test(PolymorphicTypes PolymorphicTypes)
 
 add_executable(ParsingSimpleInput ParsingSimpleInput.cpp)
 add_test(ParsingSimpleInput ParsingSimpleInput)
+
+add_executable(ParsingInput ParsingInput.cpp)
+add_test(ParsingInput ParsingInput)
