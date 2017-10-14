@@ -4,4 +4,6 @@ set -e
 mkdir build
 cd build
 cmake -G 'Unix Makefiles' ..
-make && make test
+make
+./02_ConvertingData/ParsingInput
+make test
