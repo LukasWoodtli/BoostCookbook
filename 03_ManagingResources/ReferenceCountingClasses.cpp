@@ -29,7 +29,7 @@ void foo2() {
   typedef boost::shared_ptr<foo_class> ptr_t;
   ptr_t p;
 
-  while (p = ptr_t(get_data())) {
+  while ((p = ptr_t(get_data()))) {
     boost::thread(boost::bind(&process_sp1, p)).detach();
     boost::thread(boost::bind(&process_sp2, p)).detach();
     boost::thread(boost::bind(&process_sp3, p)).detach();
