@@ -24,5 +24,6 @@ enable_testing()
 
 add_subdirectory("01_Application")
 add_subdirectory("02_ConvertingData")
+add_subdirectory("03_ManagingResources")
 
 add_subdirectory("Other")

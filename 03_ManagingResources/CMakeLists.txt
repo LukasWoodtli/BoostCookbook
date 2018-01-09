@@ -1,0 +1,7 @@
+cmake_minimum_required (VERSION 2.8.7)
+
+add_executable(ReferenceCountingClasses ReferenceCountingClasses.cpp)
+target_link_libraries(ReferenceCountingClasses boost_thread boost_system)
+
+add_test(ReferenceCountingClasses ReferenceCountingClasses)
+

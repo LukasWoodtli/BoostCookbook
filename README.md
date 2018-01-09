@@ -44,9 +44,9 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 
 | Section                                                       | Page | Done |
 |---------------------------------------------------------------|------|------|
-| Introduction                                                  | 71   |      |
-| Managing pointers to classes that do not leave scope          | 72   |      |
-| Reference counting of pointers to classes used across methods | 74   |      |
+| Introduction                                                  | 71   |   ✓  |
+| Managing pointers to classes that do not leave scope          | 72   |  (✓) |
+| Reference counting of pointers to classes used across methods | 74   |   ✓  |
 | Managing pointers to arrays that do not leave scope           | 77   |      |
 | Reference counting pointers to arrays used across methods     | 79   |      |
 | Storing any functional objects in a variable                  | 82   |      |
