@@ -5,3 +5,6 @@ target_link_libraries(ReferenceCountingClasses boost_thread boost_system)
 
 add_test(ReferenceCountingClasses ReferenceCountingClasses)
 
+
+add_executable(SmartPointersToArrays SmartPointersToArrays.cpp)
+add_test(SmartPointersToArrays SmartPointersToArrays)
