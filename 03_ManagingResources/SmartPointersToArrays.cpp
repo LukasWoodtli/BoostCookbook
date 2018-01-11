@@ -1,5 +1,6 @@
 #include <boost/scoped_array.hpp>
 #include <boost/shared_array.hpp>
+#include <boost/make_shared.hpp>
 #include <boost/thread.hpp>
 #include <boost/bind.hpp>
 #include <memory>
