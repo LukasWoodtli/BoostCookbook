@@ -52,7 +52,7 @@ int main() {
   foo3();
 
   // poor man's synchronization
-  sleep(5);
+  //sleep(5);
 
   return 0;
 }
