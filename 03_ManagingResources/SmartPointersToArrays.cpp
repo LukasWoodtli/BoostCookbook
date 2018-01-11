@@ -85,23 +85,6 @@ void do_process_in_background_v3(const my_type* data, std::size_t size) {
   boost::thread(boost::bind(&do_process_shared_ptr2, data_cpy, size)).detach();
 }
 
-
-// C++11 style
-void do_process_shared_std(const std::shared_ptr<my_type[]> & data, std::size_t size) {
-  // do some processing
-  (void)data;
-  (void)size;
-}
-
-void do_process_in_background_std(const my_type* data, std::size_t size) {
-  // copy data
-  // std::make_shared<my_type[]>(size) not available until C++20
-  std::shared_ptr<my_type> data_cpy(new my_type[size]) std::default_delete<my_type[]>());
-  std::memcpy(data_cpy.get(), data, size);
-
-  boost::thread(boost::bind(&do_process_shared_std, data_cpy, size)).detach();
-}
-
 ///////////////////////////////////////////////////////////////
 // tests
 ///////////////////////////////////////////////////////////////
@@ -128,10 +111,6 @@ int main() {
   //sleep(1);
   std::cout << "\nCall do_process_in_background_v3\n";
   do_process_in_background_v3(my_array, SIZE);
-
-  //sleep(1);
-  std::cout << "\nCall do_process_in_background_std (C++11)\n";
-  do_process_in_background_std(my_array, SIZE);
 
   //sleep(3);
   std::cout << "\nEnd!\n";
