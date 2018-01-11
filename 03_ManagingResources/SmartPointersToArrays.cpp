@@ -96,7 +96,7 @@ void do_process_shared_std(const std::shared_ptr<my_type[]> & data, std::size_t 
 void do_process_in_background_std(const my_type* data, std::size_t size) {
   // copy data
   // std::make_shared<my_type[]>(size) not available until C++20
-  std::shared_ptr<my_type[]> data_cpy(new my_type[size]);
+  std::shared_ptr<my_type[]> data_cpy = std::shared_ptr<my_type[]>(new my_type[size]);
   std::memcpy(data_cpy.get(), data, size);
 
   boost::thread(boost::bind(&do_process_shared_std, data_cpy, size)).detach();
