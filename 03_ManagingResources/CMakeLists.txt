@@ -9,3 +9,6 @@ add_test(ReferenceCountingClasses ReferenceCountingClasses)
 add_executable(SmartPointersToArrays SmartPointersToArrays.cpp)
 target_link_libraries(SmartPointersToArrays boost_thread boost_system)
 add_test(SmartPointersToArrays SmartPointersToArrays)
+
+add_executable(FunctionalObjectsInVariable FunctionalObjectsInVariable.cpp)
+add_test(FunctionalObjectsInVariable FunctionalObjectsInVariable)
