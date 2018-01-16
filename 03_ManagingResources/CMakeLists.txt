@@ -1,13 +1,11 @@
 cmake_minimum_required (VERSION 2.8.7)
 
 add_executable(ReferenceCountingClasses ReferenceCountingClasses.cpp)
-target_link_libraries(ReferenceCountingClasses boost_thread boost_system)
-
+target_link_libraries(ReferenceCountingClasses ${Boost_THREAD_LIBRARY} ${Boost_SYSTEM_LIBRARY})
 add_test(ReferenceCountingClasses ReferenceCountingClasses)
 
-
 add_executable(SmartPointersToArrays SmartPointersToArrays.cpp)
-target_link_libraries(SmartPointersToArrays boost_thread boost_system)
+target_link_libraries(SmartPointersToArrays ${Boost_THREAD_LIBRARY} ${Boost_SYSTEM_LIBRARY})
 add_test(SmartPointersToArrays SmartPointersToArrays)
 
 add_executable(FunctionalObjectsInVariable FunctionalObjectsInVariable.cpp)
