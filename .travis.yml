@@ -42,5 +42,5 @@ matrix:
     compiler: gcc
 
 
-script: bash ./.travis_build_and_test.sh
+script: bash -x ./.travis_build_and_test.sh
 
