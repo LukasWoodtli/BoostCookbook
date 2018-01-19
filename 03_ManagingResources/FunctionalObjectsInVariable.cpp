@@ -84,25 +84,19 @@ bool foo_std(const stdfobject_t& f) {
 }
 
 
-
-
 #define ASSERT(b) do {if(not b) {std::cout << "ASSERT failed\n"; exit(EXIT_FAILURE);}}while(0)
 
-#define TEST_PRINT(t) do{std::cout << "TEST " << #t << "\n";} while (0)
-
 int main() {
-  TEST_PRINT(1);
   // boost
   bool is_triggered = false;
   int_processor fo(0, 200, is_triggered);
   process_integers(fo);
 
 #if !(defined(__linux__) && defined(__GNUC__))
-  TEST_PRINT(a);
+  // this is not working on travis Linux/GCC
   ASSERT(is_triggered);
 #endif
 
-  TEST_PRINT(2);
   // boost::function to bool conversion
   fobject_t empty;
   bool result = foo(empty);
@@ -110,19 +104,16 @@ int main() {
   result = foo(fo);
   ASSERT(result);
 
-  TEST_PRINT(3);
   // C++11
   is_triggered = false;
   int_processor_std fo_std(0, 200, is_triggered);
   process_integers_std(fo_std);
   ASSERT(is_triggered);
 
-  TEST_PRINT(4);
   // std::function to bool conversion
   stdfobject_t empty_std;
   result = foo_std(empty_std);
   ASSERT(not result);
   result = foo(fo_std);
   ASSERT(result);
-  TEST_PRINT(5);
 }
