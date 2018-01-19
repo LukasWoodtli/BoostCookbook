@@ -87,7 +87,7 @@ bool foo_std(const stdfobject_t& f) {
 
 
 
-#define ASSERT(b) do {if(not b) exit(EXIT_FAILURE);}while(0)
+#define ASSERT(b) do {if(not b) {std::cout << "ASSERT failed\n"; exit(EXIT_FAILURE);}}while(0)
 
 #define TEST_PRINT(t) do{std::cout << "TEST " << #t << "\n";} while (0)
 
