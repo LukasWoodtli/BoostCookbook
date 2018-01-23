@@ -98,6 +98,11 @@ void my_ints_function(int i) {
     std::cout << __FUNCTION__ << " called: int is " << i << "\n";
 }
 
+
+
+
+
+
 ////////////////////////////////////////////////////////////////
 // Tests ///////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -142,4 +147,13 @@ int main() {
   std::cout << "C++11 (std):\n";
   process_integers_std(&my_ints_function);
 
+
+// Passing C++11 lambda functions in a variable ///////////////
+  std::cout << "\nLambda:\n";
+  // boost
+  std::cout << "boost:\n";
+  process_integers([](int i){std::cout << "i: " << i << "\n";});
+  // C++11
+  std::cout << "C++11 (std):\n";
+  process_integers_std([](int i){std::cout << "i: " << i << "\n";});
 }

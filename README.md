@@ -51,7 +51,7 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 | Reference counting pointers to arrays used across methods     | 79   |   ✓  |
 | Storing any functional objects in a variable                  | 82   |   ✓  |
 | Passing a function pointer in a variable                      | 85   |   ✓  |
-| Passing C++11 lambda functions in a variable                  | 86   |      |
+| Passing C++11 lambda functions in a variable                  | 86   |   ✓  |
 | Containers of pointers                                        | 88   |      |
 | Doing something at scope exit                                 | 91   |      |
 | Initializing the base class by a member of the derived class  | 93   |      |
