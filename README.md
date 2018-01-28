@@ -53,8 +53,8 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 | Passing a function pointer in a variable                      | 85   |   ✓  |
 | Passing C++11 lambda functions in a variable                  | 86   |   ✓  |
 | Containers of pointers                                        | 88   |  (✓) |
-| Doing something at scope exit                                 | 91   |      |
-| Initializing the base class by a member of the derived class  | 93   |      |
+| Doing something at scope exit                                 | 91   |   ✓  |
+| Initializing the base class by a member of the derived class  | 93   |  (✓) |
 
 
 ## Chapter 4: Compile-time Tricks (p. 97)

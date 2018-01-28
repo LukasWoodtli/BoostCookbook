@@ -10,3 +10,6 @@ add_test(SmartPointersToArrays SmartPointersToArrays)
 
 add_executable(FunctionalObjectsInVariable FunctionalObjectsInVariable.cpp)
 add_test(FunctionalObjectsInVariable FunctionalObjectsInVariable)
+
+add_executable(ScopeExit ScopeExit.cpp)
+add_test(ScopeExit ScopeExit)
