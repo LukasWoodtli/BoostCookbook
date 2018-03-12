@@ -61,9 +61,9 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 
 | Section                                                      | Page | Done |
 |--------------------------------------------------------------|------|------|
-| Introduction                                                 | 97   |      |
-| Checking sizes at compile time                               | 98   |      |
-| Enabling the usage of templated functions for integral types | 102  |      |
+| Introduction                                                 | 97   |   ✓  |
+| Checking sizes at compile time                               | 98   |  (✓) |
+| Enabling the usage of templated functions for integral types | 102  |   ✓  |
 | Disabling templated functions' usage for real types          | 106  |      |
 | Creating a type from number                                  | 108  |      |
 | Implementing a type trait                                    | 111  |      |

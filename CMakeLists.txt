@@ -24,5 +24,10 @@ enable_testing()
 add_subdirectory("01_Application")
 add_subdirectory("02_ConvertingData")
 add_subdirectory("03_ManagingResources")
+add_subdirectory("04_CompileTimeTricks")
 
 add_subdirectory("Other")
+
+
+message(${CMAKE_CTEST_COMMAND})
+execute_process(COMMAND ${CMAKE_CTEST_COMMAND} -N)
