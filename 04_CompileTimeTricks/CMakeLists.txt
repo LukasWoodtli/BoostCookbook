@@ -6,3 +6,6 @@ add_test(TemplateFunctions TemplateFunctions)
 
 add_executable(TypeFromNumber TypeFromNumber.cpp)
 add_test(TypeFromNumber TypeFromNumber)
+
+add_executable(TypeTraits TypeTraits.cpp)
+add_test(TypeTraits TypeTraits)
