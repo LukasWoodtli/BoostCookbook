@@ -9,3 +9,6 @@ add_test(TypeFromNumber TypeFromNumber)
 
 add_executable(TypeTraits TypeTraits.cpp)
 add_test(TypeTraits TypeTraits)
+
+add_executable(OperatorForTemplateParameter OperatorForTemplateParameter.cpp)
+add_test(OperatorForTemplateParameter OperatorForTemplateParameter)
