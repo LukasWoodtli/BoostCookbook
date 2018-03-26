@@ -41,7 +41,7 @@ namespace detail {
 
 template <class T>
 T process(const T& val) {
-	static_assert(boost::is_pod<T>::value);
+	static_assert(boost::is_pod<T>::value, "Not POD!");
 	return detail::process_impl(val, boost::mpl::int_<sizeof(T)>());
 }
 
