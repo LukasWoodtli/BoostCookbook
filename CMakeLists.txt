@@ -25,6 +25,7 @@ add_subdirectory("01_Application")
 add_subdirectory("02_ConvertingData")
 add_subdirectory("03_ManagingResources")
 add_subdirectory("04_CompileTimeTricks")
+add_subdirectory("05_Threads")
 
 add_subdirectory("Other")
 
