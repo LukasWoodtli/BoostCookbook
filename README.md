@@ -77,7 +77,7 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 |-----------------------------------------------|------|------|
 | Introduction                                  | 121  |   ✓  |
 | Creating an execution thread                  | 122  |   ✓  |
-| Syncing access to a common resource           | 126  |      |
+| Syncing access to a common resource           | 126  |   ✓  |
 | Fast access to common resource using atomics  | 131  |      |
 | Creating a work_queue class                   | 134  |      |
 | Multiple-readers-single-writer lock           | 138  |      |
