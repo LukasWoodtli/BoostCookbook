@@ -1,7 +1,8 @@
+dist: trusty
 
 install:
 # /usr/bin/gcc is 4.6 always, but gcc-X.Y is available.
-- if [ "$CXX" = "g++" ]; then export CXX="g++-4.9" CC="gcc-4.9"; fi
+- if [ "$CXX" = "g++" ]; then export CXX="g++-7" CC="gcc-7"; fi
 # /usr/bin/clang is 3.4, lets override with modern one.
 - if [ "$CXX" = "clang++" ] && [ "$TRAVIS_OS_NAME" = "linux" ]; then export CXX="clang++-3.7" CC="clang-3.7"; fi
 - echo ${PATH}
@@ -17,12 +18,12 @@ addons:
     #   https://github.com/travis-ci/apt-source-whitelist/blob/master/ubuntu.json
     sources:
     - ubuntu-toolchain-r-test
-    - llvm-toolchain-precise-3.7
+    - llvm-toolchain-trusty-5.0
     - boost-latest
     packages:
-    - gcc-4.9
-    - g++-4.9
-    - clang-3.7
+    - gcc-7
+    - g++-7
+    - clang-5.0
     - valgrind
     - libboost1.55-all-dev
 
