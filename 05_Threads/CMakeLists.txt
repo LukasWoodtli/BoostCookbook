@@ -31,3 +31,7 @@ add_test(ThreadLocal ThreadLocal)
 add_executable(InterruptingThread InterruptingThread.cpp)
 target_link_libraries(InterruptingThread ${Boost_THREAD_LIBRARY} ${Boost_SYSTEM_LIBRARY} -lpthread)
 add_test(InterruptingThread InterruptingThread)
+
+add_executable(ThreadGroup ThreadGroup.cpp)
+target_link_libraries(ThreadGroup ${Boost_THREAD_LIBRARY} ${Boost_SYSTEM_LIBRARY} -lpthread)
+add_test(ThreadGroup ThreadGroup)

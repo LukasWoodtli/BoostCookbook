@@ -83,7 +83,7 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 | Multiple-readers-single-writer lock           | 138  |   ✓  |
 | Creating variables that are unique per thread | 141  |   ✓  |
 | Interrupting a thread                         | 144  |   ✓  |
-| Manipulating a group of threads               | 146  |      |
+| Manipulating a group of threads               | 146  |   ✓  |
 
 
 ## Chapter 6: Manipulating Tasks (p. 149)
