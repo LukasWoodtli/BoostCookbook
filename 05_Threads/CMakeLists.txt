@@ -24,7 +24,10 @@ add_executable(MultipleReadersSingleWriter MultipleReadersSingleWriter.cpp)
 target_link_libraries(MultipleReadersSingleWriter ${Boost_THREAD_LIBRARY} ${Boost_SYSTEM_LIBRARY} -lpthread)
 add_test(MultipleReadersSingleWriter MultipleReadersSingleWriter)
 
-
 add_executable(ThreadLocal ThreadLocal.cpp)
 target_link_libraries(ThreadLocal ${Boost_THREAD_LIBRARY} ${Boost_SYSTEM_LIBRARY} -lpthread)
 add_test(ThreadLocal ThreadLocal)
+
+add_executable(InterruptingThread InterruptingThread.cpp)
+target_link_libraries(InterruptingThread ${Boost_THREAD_LIBRARY} ${Boost_SYSTEM_LIBRARY} -lpthread)
+add_test(InterruptingThread InterruptingThread)
