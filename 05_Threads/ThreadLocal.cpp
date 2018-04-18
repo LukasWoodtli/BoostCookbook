@@ -18,7 +18,7 @@ public:
 	static std::atomic<int> connection_num_;
 };
 
-std::atomic<int> connection::connection_num_ = 0;
+std::atomic<int> connection::connection_num_(0);
 
 
 ///////////////////////////
