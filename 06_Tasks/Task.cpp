@@ -2,7 +2,7 @@
 #include <functional>
 
 #include <boost/thread/thread.hpp>
-#include <boost/asio/io_context.hpp>
+#include <boost/asio/io_service.hpp> // io_context in newer boost versions
 
 namespace detail {
     template <class T>
@@ -47,8 +47,8 @@ namespace detail {
 
 
 class tasks_processor : private boost::noncopyable {
-    boost::asio::io_context         ios_;
-    boost::asio::io_context::work   work_;  
+    boost::asio::io_service         ios_;
+    boost::asio::io_service::work   work_;  
 
     tasks_processor()
      :  ios_(),
