@@ -90,7 +90,7 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 
 | Section                                                 | Page | Done |
 |---------------------------------------------------------|------|------|
-| Introduction                                            | 149  |      |
+| Introduction                                            | 149  |   ✓  |
 | Registering a task for processing an arbitrary datatype | 150  |      |
 | Making timers and processing timer events as tasks      | 154  |      |
 | Network communication as a task                         | 157  |      |
