@@ -9,7 +9,7 @@
 
 
 struct my_type {
-  ~my_type() { std::cout << "Delete\n"; }
+  //~my_type() { std::cout << "Delete\n"; }
 };
 
 ///////////////////////////////////////////////////////////////
