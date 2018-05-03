@@ -38,36 +38,31 @@ struct task_wrapped {
   }
 };
 
-
 template <class Functor>
 struct timer_task : public task_wrapped<Functor> {
-private:
-	typedef task_wrapped<Functor> base_t;
-	std::shared_ptr<boost::asio::deadline_timer> timer_;
+ private:
+  typedef task_wrapped<Functor> base_t;
+  std::shared_ptr<boost::asio::deadline_timer> timer_;
 
-public:
-	template <class Time>
-	explicit timer_task(
-		boost::asio::io_service& ios,
-		const Time&duration_or_time,
-		const Functor& task_unwrapped)
-			: base_t(task_unwrapped),
-			  timer_(std::make_shared<boost::asio::deadline_timer>(std::ref(ios), duration_or_time))
-		{}
+ public:
+  template <class Time>
+  explicit timer_task(boost::asio::io_service& ios,
+                      const Time& duration_or_time,
+                      const Functor& task_unwrapped)
+      : base_t(task_unwrapped),
+        timer_(std::make_shared<boost::asio::deadline_timer>(
+            std::ref(ios), duration_or_time)) {}
 
-		void push_task() const {
-			timer_->async_wait(*this);
-		}
-		
-		void operator()(const boost::system::error_code& error) const {
-			if (!error) {
-				base_t::operator()();
-			}
-			else {
-				std::cerr << error << "\n";
-			}
-		}
- };
+  void push_task() const { timer_->async_wait(*this); }
+
+  void operator()(const boost::system::error_code& error) const {
+    if (!error) {
+      base_t::operator()();
+    } else {
+      std::cerr << error << "\n";
+    }
+  }
+};
 
 template <class T>
 task_wrapped<T> make_task_wrapped(const T& task_unwrapped) {
@@ -111,16 +106,14 @@ class tasks_processor : private boost::noncopyable {
 
 // TEST
 
-void func_test() {
-	std::cout << "Hello\n";
-}
+void func_test() { std::cout << "Hello\n"; }
 
 int main() {
   static const std::size_t tasks_count = 3;
 
-
   for (std::size_t i = 0; i < tasks_count; ++i) {
-    tasks_processor::get().run_at(boost::posix_time::from_time_t(time(NULL) + 3*i), &func_test);
+    tasks_processor::get().run_at(
+        boost::posix_time::from_time_t(time(NULL) + 3 * i), &func_test);
   }
 
   // will not throw but blocks until one of the tasks calls stop)
