@@ -31,6 +31,7 @@ add_subdirectory("03_ManagingResources")
 add_subdirectory("04_CompileTimeTricks")
 add_subdirectory("05_Threads")
 add_subdirectory("06_Tasks")
+add_subdirectory("07_Strings")
 
 add_subdirectory("Other")
 
