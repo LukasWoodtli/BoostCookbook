@@ -110,7 +110,7 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 | Changing cases and case-insensitive comparison            | 189  |   ✓  |
 | Matching strings using regular expressions                | 192  |   ✓  |
 | Searching and replacing strings using regular expressions | 196  |   ✓  |
-| Formatting strings using safe printf-like functions       | 199  |      |
+| Formatting strings using safe printf-like functions       | 199  |   ✓  |
 | Replacing and erasing strings                             | 201  |      |
 | Representing a string with two iterators                  | 203  |      |
 | Using a reference to string type                          | 206  |      |
