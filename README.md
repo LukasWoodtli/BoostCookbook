@@ -108,7 +108,7 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 |-----------------------------------------------------------|------|------|
 | Introduction                                              | 189  |   ✓  |
 | Changing cases and case-insensitive comparison            | 189  |   ✓  |
-| Matching strings using regular expressions                | 192  |      |
+| Matching strings using regular expressions                | 192  |   ✓  |
 | Searching and replacing strings using regular expressions | 196  |      |
 | Formatting strings using safe printf-like functions       | 199  |      |
 | Replacing and erasing strings                             | 201  |      |
