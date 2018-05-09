@@ -121,7 +121,7 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 | Section                                          | Page | Done |
 |--------------------------------------------------|------|------|
 | Introduction                                     | 211  |   ✓  |
-| Using type "vector of types"                     | 212  |      |
+| Using type "vector of types"                     | 212  |   ✓  |
 | Manipulating a vector of types                   | 217  |      |
 | Getting a function's result type at compile time | 222  |      |
 | Making a higher-order metafunction               | 225  |      |
