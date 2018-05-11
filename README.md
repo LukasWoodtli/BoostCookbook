@@ -122,12 +122,12 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 |--------------------------------------------------|------|------|
 | Introduction                                     | 211  |   ✓  |
 | Using type "vector of types"                     | 212  |   ✓  |
-| Manipulating a vector of types                   | 217  |      |
-| Getting a function's result type at compile time | 222  |      |
-| Making a higher-order metafunction               | 225  |      |
-| Evaluating metafunctions lazily                  | 227  |      |
-| Converting all the tuple elements to strings     | 230  |      |
-| Splitting tuples                                 | 234  |      |
+| Manipulating a vector of types                   | 217  |   ✓  |
+| Getting a function's result type at compile time | 222  |   ✗  |
+| Making a higher-order metafunction               | 225  |   ✗  |
+| Evaluating metafunctions lazily                  | 227  |   ✗  |
+| Converting all the tuple elements to strings     | 230  |  (✓) |
+| Splitting tuples                                 | 234  |  (✓) |
 
 
 ## Chapter 9: Containers (p. 239)

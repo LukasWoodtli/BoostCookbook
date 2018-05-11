@@ -35,7 +35,3 @@ add_subdirectory("07_Strings")
 add_subdirectory("08_Metaprogramming")
 
 add_subdirectory("Other")
-
-
-message(${CMAKE_CTEST_COMMAND})
-execute_process(COMMAND ${CMAKE_CTEST_COMMAND} -N)
