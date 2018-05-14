@@ -33,5 +33,6 @@ add_subdirectory("05_Threads")
 add_subdirectory("06_Tasks")
 add_subdirectory("07_Strings")
 add_subdirectory("08_Metaprogramming")
+add_subdirectory("09_Containers")
 
 add_subdirectory("Other")

@@ -134,8 +134,8 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 
 | Section                                                   | Page | Done |
 |-----------------------------------------------------------|------|------|
-| Introduction                                              | 239  |      |
-| Comparing strings in an ultra-fast manner                 | 240  |      |
+| Introduction                                              | 239  |   ✓  |
+| Comparing strings in an ultra-fast manner                 | 240  |   ✓  |
 | Using an unordered set and map                            | 244  |      |
 | Making a map, where value is also a key                   | 248  |      |
 | Using multi-index containers                              | 252  |      |
