@@ -139,7 +139,7 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 | Using an unordered set and map                            | 244  |   ✓  |
 | Making a map, where value is also a key                   | 248  |   ✓  |
 | Using multi-index containers                              | 252  |   ✗  |
-| Getting the bene ts of single-linked list and memory pool | 258  |   ✓  |
+| Getting the benfits of single-linked list and memory pool | 258  |   ✓  |
 | Using at associative containers                           | 263  |  (✓) |
 
 
@@ -150,9 +150,9 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 | Introduction                                                                        | 267  |   ✓  |
 | Detecting int128 support                                                            | 268  |   ✓  |
 | Detecting RTTI support                                                              | 270  |   ✓  |
-| Speeding up compilation using C++11 extern templates                                | 272  |      |
-| Writing metafunctions using simpler methods                                         | 274  |      |
-| Reducing code size and increasing performance of user-defined types (UDTs) in C++11 | 276  |      |
+| Speeding up compilation using C++11 extern templates                                | 272  |  (✓) |
+| Writing metafunctions using simpler methods                                         | 274  |  (✓) |
+| Reducing code size and increasing performance of user-defined types (UDTs) in C++11 | 276  |  (✓) |
 | The portable way to export and import functions and classes                         | 279  |      |
 | Detecting the Boost version and getting latest features                             | 282  |      |
 
@@ -162,7 +162,7 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 | Section                                                    | Page | Done |
 |------------------------------------------------------------|------|------|
 | Introduction                                               | 285  |      |
-| Listing les in a directory                                 | 286  |      |
+| Listing files in a directory                               | 286  |      |
 | Erasing and creating les and directories                   | 288  |      |
 | Passing data quickly from one process to another           | 291  |      |
 | Syncing interprocess communications                        | 294  |      |
