@@ -9,3 +9,6 @@ add_test(UnorderedSetAndMap UnorderedSetAndMap)
 
 add_executable(Bimap Bimap.cpp)
 add_test(Bimap Bimap)
+
+add_executable(SList SList.cpp)
+add_test(SList SList)

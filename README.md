@@ -139,8 +139,8 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 | Using an unordered set and map                            | 244  |   ✓  |
 | Making a map, where value is also a key                   | 248  |   ✓  |
 | Using multi-index containers                              | 252  |   ✗  |
-| Getting the bene ts of single-linked list and memory pool | 258  |      |
-| Using at associative containers                           | 263  |      |
+| Getting the bene ts of single-linked list and memory pool | 258  |   ✓  |
+| Using at associative containers                           | 263  |  (✓) |
 
 
 ## Chapter 10: Gathering Platform and Compiler Information (p. 267)
