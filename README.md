@@ -147,9 +147,9 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 
 | Section                                                                             | Page | Done |
 |-------------------------------------------------------------------------------------|------|------|
-| Introduction                                                                        | 267  |      |
-| Detecting int128 support                                                            | 268  |      |
-| Detecting RTTI support                                                              | 270  |      |
+| Introduction                                                                        | 267  |   ✓  |
+| Detecting int128 support                                                            | 268  |   ✓  |
+| Detecting RTTI support                                                              | 270  |   ✓  |
 | Speeding up compilation using C++11 extern templates                                | 272  |      |
 | Writing metafunctions using simpler methods                                         | 274  |      |
 | Reducing code size and increasing performance of user-defined types (UDTs) in C++11 | 276  |      |
