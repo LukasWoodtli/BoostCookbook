@@ -30,7 +30,7 @@ inline int128_t mul(int128_t v1, int128_t v2, int128_t v3) {
 	(void)v2;
 	(void)v3;
 
-	return 0; // hand written math
+	return int128_t{0,0}; // hand written math
 }
 
 #endif
