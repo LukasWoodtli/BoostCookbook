@@ -11,4 +11,5 @@ add_executable(Bimap Bimap.cpp)
 add_test(Bimap Bimap)
 
 add_executable(SList SList.cpp)
+target_link_libraries(SList ${Boost_SYSTEM_LIBRARY})
 add_test(SList SList)
