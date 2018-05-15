@@ -137,8 +137,8 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 | Introduction                                              | 239  |   ✓  |
 | Comparing strings in an ultra-fast manner                 | 240  |   ✓  |
 | Using an unordered set and map                            | 244  |   ✓  |
-| Making a map, where value is also a key                   | 248  |      |
-| Using multi-index containers                              | 252  |      |
+| Making a map, where value is also a key                   | 248  |   ✓  |
+| Using multi-index containers                              | 252  |   ✗  |
 | Getting the bene ts of single-linked list and memory pool | 258  |      |
 | Using at associative containers                           | 263  |      |
 
