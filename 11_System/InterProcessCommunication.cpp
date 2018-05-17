@@ -3,6 +3,9 @@
 #include <boost/interprocess/managed_shared_memory.hpp>
 #include <boost/atomic.hpp>
 
+/* All the processes that are using shared memory must run on the same host or on 
+ * a symmetric multiprocessing (SMP) cluster. */
+
 typedef boost::atomic<int> atomic_t;
 
 #if (BOOST_ATOMIC_INT_LOCK_FREE != 2)
