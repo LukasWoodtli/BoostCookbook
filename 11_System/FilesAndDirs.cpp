@@ -1,9 +1,17 @@
 #include <iostream>
+#include <fstream>
+#include <cassert>
 
 #include <boost/filesystem/operations.hpp>
 
 
 int main() {
+
+	/////////////////////////////////////////////////////////
+	///// Listing files in a directory //////////////////////
+	/////////////////////////////////////////////////////////
+
+
 	boost::filesystem::directory_iterator begin(".");
 	boost::filesystem::directory_iterator end;
 	
@@ -31,7 +39,38 @@ int main() {
 		else {
 			std::cout << "  ";
 		}
-		
+
 		std::cout << begin->path() << '\n';
 	}
+
+
+
+	/////////////////////////////////////////////////////////
+	///// Erasing and creating files and directories ////////
+	/////////////////////////////////////////////////////////
+
+	boost::system::error_code error;
+
+	// boost::filesystem::create_directory can not create subdirectories
+	boost::filesystem::create_directories("dir/subdir", error);
+	assert(!error);
+
+	std::ofstream ofs("dir/subdir/file.txt");
+	ofs << "Boost.filesystem is fun!";
+	assert(ofs);
+	ofs.close();
+
+	boost::filesystem::create_directory_symlink("dir/subdir", "symlink", error);
+
+	if (!error) {
+		std::cout << "Symlink created\n";
+		assert(boost::filesystem::exists("symlink/file.txt"));
+	}
+	else {
+		// remove file if symlink creation failed
+		std::cerr << "Failed to create symlink\n";
+		boost::filesystem::remove("dir/subdir/file.txt", error);
+		assert(!error);
+	}
+
 }
