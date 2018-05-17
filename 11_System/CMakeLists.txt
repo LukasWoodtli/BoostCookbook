@@ -11,7 +11,9 @@ if (NOT APPLE)
 	target_link_libraries(InterProcessCommunication -lrt)
 endif()
 
-
-add_executable(Coroutines Coroutines.cpp)
-target_link_libraries(Coroutines ${Boost_CONTEXT_LIBRARY})
-add_test(Coroutines Coroutines)
+if (APPLE)
+	# on travis boost on linux is to old to support boost::coroutines2
+	add_executable(Coroutines Coroutines.cpp)
+	target_link_libraries(Coroutines ${Boost_CONTEXT_LIBRARY})
+	add_test(Coroutines Coroutines)
+endif()
