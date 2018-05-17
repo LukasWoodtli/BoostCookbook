@@ -10,3 +10,8 @@ target_link_libraries(InterProcessCommunication -lpthread)
 if (NOT APPLE)
 	target_link_libraries(InterProcessCommunication -lrt)
 endif()
+
+
+add_executable(Coroutines Coroutines.cpp)
+target_link_libraries(Coroutines ${Boost_CONTEXT_LIBRARY})
+add_test(Coroutines Coroutines)

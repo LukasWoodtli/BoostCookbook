@@ -165,10 +165,10 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 | Listing files in a directory                               | 286  |   ✓  |
 | Erasing and creating les and directories                   | 288  |   ✓  |
 | Passing data quickly from one process to another           | 291  |   ✓  |
-| Syncing interprocess communications                        | 294  |      |
-| Using pointers in shared memory                            | 297  |      |
-| The fastest way to read les                                | 300  |      |
-| Coroutines - saving the state and postponing the execution | 302  |      |
+| Syncing interprocess communications                        | 294  |  (✓) |
+| Using pointers in shared memory                            | 297  |  (✓) |
+| The fastest way to readfiles                               | 300  |  (✓) |
+| Coroutines - saving the state and postponing the execution | 302  |   ✓  |
 
 
 ## Chapter 12: Scratching the Tip of the Iceberg (p. 307)
