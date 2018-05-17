@@ -164,7 +164,7 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 | Introduction                                               | 285  |   ✓  |
 | Listing files in a directory                               | 286  |   ✓  |
 | Erasing and creating les and directories                   | 288  |   ✓  |
-| Passing data quickly from one process to another           | 291  |      |
+| Passing data quickly from one process to another           | 291  |   ✓  |
 | Syncing interprocess communications                        | 294  |      |
 | Using pointers in shared memory                            | 297  |      |
 | The fastest way to read les                                | 300  |      |
