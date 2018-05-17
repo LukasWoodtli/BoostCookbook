@@ -1,3 +1,6 @@
+# This file can be used to hide and export
+# symbols from a DSO.
+# This does not work with ld on macOS
 {
 global:
 	extern "C++" {
