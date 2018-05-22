@@ -20,7 +20,7 @@ if(NOT CMAKE_BUILD_TYPE)
 set(CMAKE_BUILD_TYPE DEBUG)
 endif()
 
-find_package(Boost 1.53.0 REQUIRED thread system filesystem program_options regex context)
+find_package(Boost 1.53.0 REQUIRED thread system filesystem program_options regex context graph)
 include_directories(${Boost_INCLUDE_DIRS})
 
 enable_testing()
@@ -36,5 +36,6 @@ add_subdirectory("08_Metaprogramming")
 add_subdirectory("09_Containers")
 add_subdirectory("10_PlatformInformation")
 add_subdirectory("11_System")
+add_subdirectory("12_TipOfIceberg")
 
 add_subdirectory("Other")
