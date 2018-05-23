@@ -20,7 +20,7 @@ if(NOT CMAKE_BUILD_TYPE)
 set(CMAKE_BUILD_TYPE DEBUG)
 endif()
 
-find_package(Boost 1.53.0 REQUIRED thread system filesystem program_options regex context graph)
+find_package(Boost 1.53.0 REQUIRED thread system filesystem program_options regex context graph random)
 include_directories(${Boost_INCLUDE_DIRS})
 
 enable_testing()
