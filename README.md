@@ -182,4 +182,4 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 | Using portable math functions                    | 317  |   ✓  |
 | Writing test cases                               | 319  |   ✓  |
 | Combining multiple test cases in one test module | 321  |   ✓  |
-| Manipulating images                              | 323  |      |
+| Manipulating images                              | 323  |   ✓  |
