@@ -10,6 +10,33 @@ typedef std::string vertex_t;
 typedef boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, vertex_t> graph_type;
 
 
+
+namespace detail {
+
+template <class GraphT>
+class vertex_writer {
+	const GraphT& g_;
+
+public:
+	explicit vertex_writer(const GraphT& g)
+		: g_(g)
+		{}
+
+	template <class VertexDescriptorT>
+	void operator()(std::ostream& out, const VertexDescriptorT& d) const {
+		out << " [label=\""
+		    << boost::get(boost::vertex_bundle, g_)[d]
+				<< "\"]";
+	}
+};
+}
+
+std::ostream& operator<<(std::ostream& out, const graph_type& g) {
+	detail::vertex_writer<graph_type> vw(g);
+	boost::write_graphviz(out, g, vw);
+	return out;
+}
+
 template <class GraphT>
 void find_and_print(const GraphT& g, boost::string_ref name) {
 	typedef typename boost::graph_traits<graph_type>::vertex_iterator vert_it_t;
@@ -52,5 +79,9 @@ int main() {
 	boost::add_edge(ansic, guru, graph);
 
 	find_and_print(graph, "C++");
-	
+
+
+	// print out qraphviz code for graph
+	std::cout << graph;
+
 }
