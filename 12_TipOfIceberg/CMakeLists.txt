@@ -7,3 +7,6 @@ add_test(Graphs Graphs)
 add_executable(Random Random.cpp)
 target_link_libraries(Random ${Boost_RANDOM_LIBRARY})
 add_test(Random Random)
+
+add_executable(Math Math.cpp)
+add_test(Math Math)

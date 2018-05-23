@@ -179,7 +179,7 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 | Working with graphs                              | 308  |   ✓  |
 | Visualizing graphs                               | 312  |   ✓  |
 | Using a true random number generator             | 315  |   ✓  |
-| Using portable math functions                    | 317  |      |
+| Using portable math functions                    | 317  |   ✓  |
 | Writing test cases                               | 319  |      |
 | Combining multiple test cases in one test module | 321  |      |
 | Manipulating images                              | 323  |      |
