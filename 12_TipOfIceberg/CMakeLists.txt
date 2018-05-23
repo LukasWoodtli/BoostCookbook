@@ -23,4 +23,3 @@ include_directories(${PNG_INCLUDE_DIR})
 
 add_executable(Images Images.cpp)
 target_link_libraries(Images ${PNG_LIBRARY})
-add_test(Images Images)
