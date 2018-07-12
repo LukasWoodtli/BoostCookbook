@@ -4,7 +4,7 @@
 {
 global:
 	extern "C++" {
-		foo*;
+		foo*; # it's easiest to add C++ symbols with '*'
 		bar::meow*;
 	};
 local: *;
