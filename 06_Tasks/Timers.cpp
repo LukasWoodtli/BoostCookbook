@@ -53,6 +53,8 @@ struct timer_task : public task_wrapped<Functor> {
         timer_(std::make_shared<boost::asio::deadline_timer>(
             std::ref(ios), duration_or_time)) {}
 
+  /* boost::asio::deadline_timer must not be destroyed until it is triggered,
+   * and storing the timer_task functor in io_service guarantees this! */
   void push_task() const { timer_->async_wait(*this); }
 
   void operator()(const boost::system::error_code& error) const {
