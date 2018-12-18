@@ -8,5 +8,3 @@ add_test(Task Task)
 add_executable(Timers Timers.cpp)
 target_link_libraries(Timers ${Boost_THREAD_LIBRARY} ${Boost_SYSTEM_LIBRARY} -lpthread)
 
-add_executable(NetworkConnection NetworkConnection.cpp)
-target_link_libraries(NetworkConnection ${Boost_THREAD_LIBRARY} ${Boost_SYSTEM_LIBRARY} -lpthread)
