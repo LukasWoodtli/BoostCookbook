@@ -93,13 +93,13 @@ Examples for ["Boost C++ Application Development Cookbook"](https://www.packtpub
 | Introduction                                            | 149  |   ✓  |
 | Registering a task for processing an arbitrary datatype | 150  |   ✓  |
 | Making timers and processing timer events as tasks      | 154  |   ✓  |
-| Network communication as a task                         | 157  |      |
-| Accepting incoming connections                          | 164  |      |
-| Executing different tasks in parallel                   | 169  |      |
-| Conveyor tasks processing                               | 171  |      |
-| Making a nonblocking barrier                            | 176  |      |
-| Storing an exception and making a task from it          | 181  |      |
-| Getting and processing system signals as tasks          | 185  |      |
+| Network communication as a task                         | 157  |   ✗  |
+| Accepting incoming connections                          | 164  |   ✗  |
+| Executing different tasks in parallel                   | 169  |   ✗  |
+| Conveyor tasks processing                               | 171  |   ✗  |
+| Making a nonblocking barrier                            | 176  |   ✗  |
+| Storing an exception and making a task from it          | 181  |   ✗  |
+| Getting and processing system signals as tasks          | 185  |   ✗  |
 
 
 ## Chapter 7: Manipulating Strings (p. 189)
