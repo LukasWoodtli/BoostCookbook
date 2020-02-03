@@ -34,13 +34,6 @@ compiler:
 - gcc
 os:
 - linux
-- osx
-
-# would require a rebuild (ABI not compatible)
-matrix:
-  exclude:
-  - os: osx
-    compiler: gcc
 
 
 script: bash -x ./.travis_build_and_test.sh
